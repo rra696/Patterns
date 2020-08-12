@@ -16,7 +16,7 @@ class Preferences
     private function __clone(){}
     private function __wakeup(){}
 
-    public function getInstance()
+    public static function getInstance()
     {
         if (empty(self::$instanse)) {
             self::$instanse = new static;
